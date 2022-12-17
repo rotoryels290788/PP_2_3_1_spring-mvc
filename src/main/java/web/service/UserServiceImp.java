@@ -44,6 +44,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+    @Transactional
     public void delete(long id) {
         userDao.delete(id);
     }
